@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Nota Promissóaria </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> Home </a> |
+            <a href="informacoes.html"> Informações </a> |
+            <a href="cheque.html"> Cheque </a> |
+            <a href="nota_provisoria.html"> Nota Promissóaria </a> |
+            <a href="sobre_nos.html"> Sobre Nós </a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Simulador de Nota Promissória (Modelo Educativo)</h2>
+        
+        <label for="nome">Nome do emitente:</label>
+        <input type="text" id="nome">
+
+        <label for="nome">Nome do Beneficiário:</label>
+        <input type="text" id="beneficiario">
+
+        <label for="nome">Nome do Banco:</label>
+        <input type="text" id="banco">
+
+        <label for="valor">Valor (em Kz):</label>
+        <input type="text" id="valor">
+
+        <label for="data">Data de emissão:</label>
+        <input type="date" id="data">
+
+        <label for="vencimento">Data de vencimento:</label>
+        <input type="date" id="vencimento">
+
+        <label for="local">Local de pagamento:</label>
+        <input type="text" id="local">
+
+        <button onclick="gerarNota()">Gerar Nota Promissória</button>
+
+        <div class="output" id="resultado"></div>
+        <div class="watermark">
+            Nota Promissória - Modelo Educativo | Sem validade jurídica
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>

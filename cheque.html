@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Gerar Cheque </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> Home </a> |
+            <a href="informacoes.html"> Informações </a> |
+            <a href="cheque.html"> Cheque </a> |
+            <a href="nota_provisoria.html"> Nota Promissóaria </a> |
+            <a href="sobre_nos.html"> Sobre Nós </a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Gerador de Cheque Simulado</h2>
+        <label>Nome do Emitente: <input type="text" id="emitente"></label><br>
+        <label>Nome do Beneficiário: <input type="text" id="beneficiario" ></label><br>
+        <label>Banco: <input type="text" id="banco" required></label><br>
+        <label>Valor (numérico): <input type="number" id="valor" required></label><br>
+        <label>Valor por Extenso: <input type="text" id="valorExtenso" required></label><br>
+        <label>Local de Emissão: <input type="text" id="local" required></label><br>
+        <label>Data de Emissão: <input type="date" id="data" required></label><br>
+        <label>Assinatura (simulada): <input type="text" id="assinatura" required></label><br>
+        <button onclick="gerarCheque()">Gerar Cheque</button>
+    
+        <div id="resultado" class="output" style="margin-top: 30px;  padding: 20px;">
+        </div>
+        <div class="watermark">
+            Nota Promissória - Modelo Educativo | Sem validade jurídica
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
