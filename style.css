@@ -33,6 +33,7 @@ header a {
 header a:hover {
     color: #d6ad54;
     transition: .5s;
+    cursor: pointer;
 }
 
 .container {
@@ -69,7 +70,6 @@ p {
     text-align: justify;
     margin: 15px;
     font-size: 1.3em;
-
 }
 
 label {
@@ -94,6 +94,7 @@ button {
     width: 100%;
     font-size: 16px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .output {
